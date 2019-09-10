@@ -2,7 +2,9 @@
   <div class="NasaImage col-12 mt-5">
     <h3>NASA APOD</h3>
     <!-- <button class="btn btn-success" @click="getApod()">Get APOD</button> -->
+    <h5>Date: {{apodPic.date}}</h5>
     <img :src="apodPic.url" class="mt-1" />
+    <p class="mt-2">{{apodPic.explanation}}</p>
   </div>
 </template>
 
