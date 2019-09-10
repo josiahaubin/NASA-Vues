@@ -6,10 +6,11 @@
           <img src="http://www.stickpng.com/assets/images/58429400a6515b1e0ad75acc.png" />
           <img alt="Vue logo" src="../assets/logo.png" />ues
         </h1>
+        <div class="row">
+          <NasaImage />
+        </div>
       </div>
     </div>
-
-    <NasaImage />
   </div>
 </template>
 
