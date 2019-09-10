@@ -1,6 +1,13 @@
 <template>
   <div class="home container">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <div class="row">
+      <div class="col-12">
+        <h1>
+          <img src="http://www.stickpng.com/assets/images/58429400a6515b1e0ad75acc.png" />
+          <img alt="Vue logo" src="../assets/logo.png" />ues
+        </h1>
+      </div>
+    </div>
 
     <NasaImage />
   </div>
@@ -16,3 +23,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+img {
+  height: 100px;
+}
+</style>
