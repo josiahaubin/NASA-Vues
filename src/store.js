@@ -10,12 +10,17 @@ let api = axios.create({
 
 let apiKey = 'apod?api_key=GFAcaZscnDs3vp3KXwgzQHtxi34mfuly2g8yPLWe'
 
+let date = apiKey + '&date='
+
 export default new Vuex.Store({
   state: {
     apod: {}
   },
   mutations: {
     setApod(state, apod) {
+      state.apod = apod
+    },
+    setReqApod(state, apod) {
       state.apod = apod
     }
   },
@@ -26,6 +31,14 @@ export default new Vuex.Store({
         let res = await api.get(apiKey)
         commit('setApod', res.data)
 
+      } catch (error) {
+        console.error(error)
+      }
+    },
+    async requestApod({ commit, dispatch }, query) {
+      try {
+        let res = await api.get(date + query)
+        commit('setReqApod', res.data)
       } catch (error) {
         console.error(error)
       }
