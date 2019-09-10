@@ -35,4 +35,12 @@ export default {
 
 
 <style scoped>
+button {
+  background-color: #0066b2;
+  border-color: #ec1c24;
+}
+button:hover {
+  background-color: #ec1c24;
+  border-color: #0066b2;
+}
 </style>
