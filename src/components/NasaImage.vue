@@ -1,5 +1,5 @@
 <template>
-  <div class="NasaImage col-12 mt-3">
+  <div class="NasaImage col-sm-12 col-md-12 mt-3">
     <h3>NASA APOD</h3>
     <!-- <button class="btn btn-success" @click="getApod()">Get APOD</button> -->
     <h5>Date: {{apodPic.date}}</h5>
