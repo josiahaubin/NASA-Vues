@@ -1,5 +1,8 @@
 <template>
-  <div class="NasaImage"></div>
+  <div class="NasaImage col-12 mt-5">
+    <h3>NASA APOD</h3>
+    <button class="btn btn-success" @click="getApod()">Get APOD</button>
+  </div>
 </template>
 
 
@@ -10,7 +13,9 @@ export default {
     return {};
   },
   computed: {},
-  methods: {},
+  methods: {
+    getApod() {}
+  },
   components: {}
 };
 </script>
